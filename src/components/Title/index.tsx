@@ -1,9 +1,13 @@
 import React from 'react'
+import { Title as TitleStyle } from './styles'
 
-type Props = {
+export type Props = {
   children: string
+  fontSize?: number
 }
 
-const Title = (props: Props) => <span>{props.children}</span>
+const Title = (props: Props) => (
+  <TitleStyle fontSize={props.fontSize}>{props.children}</TitleStyle>
+)
 
 export default Title
