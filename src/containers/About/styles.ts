@@ -15,3 +15,17 @@ export const GithubSection = styled.div`
     }
   }
 `
+
+export const Technologies = styled.p`
+  img {
+    height: 24px;
+  }
+
+  p {
+    color: ${(props) => props.theme.mainColor};
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+`

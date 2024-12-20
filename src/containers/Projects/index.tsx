@@ -5,20 +5,8 @@ import { List } from './styles'
 
 const Projects = () => (
   <section>
-    <Title fontSize={16}>Projects</Title>
+    <Title fontSize={16}>Recent Projects</Title>
     <List>
-      <li>
-        <Project />
-      </li>
-      <li>
-        <Project />
-      </li>
-      <li>
-        <Project />
-      </li>
-      <li>
-        <Project />
-      </li>
       <li>
         <Project />
       </li>

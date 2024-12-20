@@ -2,13 +2,8 @@ import styled from 'styled-components'
 import { P } from '../../components/Paragraph/styles'
 
 export const Description = styled(P)`
-  margin-top: 24px;
-  margin-bottom: 40px;
-
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
+  margin-top: 12px;
+  margin-bottom: 12px;
 `
 
 export const ThemeBtn = styled.button`
@@ -24,6 +19,7 @@ export const SidebarContainer = styled.div`
   position: sticky;
   top: 80px;
   left: 0;
+  text-align: center;
 
   @media (max-width: 768px) {
     margin: 0 auto;
