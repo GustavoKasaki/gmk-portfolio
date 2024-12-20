@@ -14,9 +14,9 @@ export const Description = styled(P)`
 export const ThemeBtn = styled.button`
   border-radius: 12px;
   padding: 8px;
-  color: #eee;
+  color: ${(props) => props.theme.bgColor};
   font-weight: bold;
-  background-color: #282a35;
+  background-color: ${(props) => props.theme.mainColor};
   cursor: pointer;
 `
 
