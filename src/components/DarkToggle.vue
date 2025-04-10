@@ -1,11 +1,13 @@
 <script setup>
 import { computed } from 'vue'
-import { useDarkModeStore } from '@/stores/darkMode'
-import { MoonIcon, SunIcon } from '@heroicons/vue/24/solid'
+import { useDarkModeStore } from '@/stores/darkmode'
+import { SunIcon, MoonIcon } from '@heroicons/vue/24/solid'
 
-const store = useDarkModeStore()
-const darkMode = computed(() => store.darkMode)
-const toggleDarkMode = () => store.toggleDarkMode()
+const darkModeStore = useDarkModeStore()
+const darkMode = computed(() => darkModeStore.darkMode)
+const toggleDarkMode = () => {
+  darkModeStore.toggleDarkMode()
+}
 </script>
 
 <template>
