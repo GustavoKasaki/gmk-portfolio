@@ -23,17 +23,17 @@ watch(
 </script>
 
 <template>
-  <div
-    class="min-h-screen bg-gray-50 font-sans text-slate-800 transition-colors duration-500 dark:bg-gray-900 dark:text-white"
-  >
+  <div class="min-h-screen font-sans text-slate-800 dark:text-white">
     <HeaderComp />
     <Hero />
     <About />
     <Projects />
     <Skills />
     <Contact />
-    <footer class="py-6 text-center text-sm text-slate-400 dark:text-slate-500">
-      Built with 💻 by Gustavo Massatoshi Kasaki
+    <footer
+      class="bg-white py-6 text-center text-sm text-slate-400 transition-colors duration-500 dark:bg-gray-900 dark:text-slate-500"
+    >
+      Built by Gustavo Massatoshi Kasaki, 2025
     </footer>
     <DarkToggle />
   </div>

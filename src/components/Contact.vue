@@ -5,27 +5,33 @@ export default {
 </script>
 
 <template>
-  <form class="max-w-2xl mx-auto space-y-4">
-    <input
-      type="text"
-      placeholder="Name"
-      class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-    />
-    <input
-      type="email"
-      placeholder="Email"
-      class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-    />
-    <textarea
-      rows="5"
-      placeholder="Message"
-      class="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-    ></textarea>
-    <button
-      type="submit"
-      class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500 transition"
-    >
-      Send
-    </button>
-  </form>
+  <div
+    id="contact"
+    class="bg-gray-100 px-6 py-40 text-center transition-colors duration-500 dark:bg-gray-800"
+  >
+    <form class="mx-auto max-w-2xl space-y-4">
+      <h3 class="mb-6 text-2xl font-semibold text-blue-600 dark:text-blue-400">Contact info</h3>
+      <input
+        type="text"
+        placeholder="Name"
+        class="w-full rounded border border-gray-300 bg-white px-4 py-2 text-slate-900 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        class="w-full rounded border border-gray-300 bg-white px-4 py-2 text-slate-900 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+      />
+      <textarea
+        rows="5"
+        placeholder="Message"
+        class="w-full rounded border border-gray-300 bg-white px-4 py-2 text-slate-900 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+      ></textarea>
+      <button
+        type="submit"
+        class="rounded bg-blue-600 px-6 py-2 text-white transition hover:bg-blue-500"
+      >
+        Send
+      </button>
+    </form>
+  </div>
 </template>
