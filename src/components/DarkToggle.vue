@@ -13,9 +13,34 @@ const toggleDarkMode = () => {
 <template>
   <button
     @click="toggleDarkMode"
-    class="fixed right-6 bottom-6 rounded-full bg-blue-600 p-3 text-white shadow-lg transition hover:bg-blue-500"
+    class="fixed right-6 bottom-6 cursor-pointer rounded-full bg-blue-600 p-3 text-white shadow-lg transition hover:bg-blue-500"
     aria-label="Toggle Dark Mode"
   >
-    <component :is="darkMode ? SunIcon : MoonIcon" class="h-6 w-6" />
+    <Transition name="icon" mode="out-in">
+      <component :is="darkMode ? SunIcon : MoonIcon" class="h-6 w-6" />
+    </Transition>
   </button>
 </template>
+
+<style scoped>
+.icon-enter-active,
+.icon-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+.icon-enter-from {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.75);
+}
+.icon-enter-to {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+.icon-leave-from {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+.icon-leave-to {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.75);
+}
+</style>
