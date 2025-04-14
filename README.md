@@ -1,35 +1,20 @@
-# gmk-portfolio
+# Portfolio - Gustavo Kasaki
 
-This template should help get you started developing with Vue 3 in Vite.
+## About
 
-## Recommended IDE Setup
+Welcome to the repository of my personal portfolio! This project was developed to showcase my skills, projects, and experience in an interactive and responsive way.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Technologies used
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- **Vue.js 3**: Progressive framework for building user interfaces.
+- **Vite**: Fast and modern build tool for front-end projects.
+- **JavaScript**: Main programming language used in the project.
+- **Pinia**: Reactive state management shared between components.
+- **Axios**: Promises-based HTTP client for fetching public repos on Github.
+- **Express**: Back-end framework for Node.js.
+- **dotenv**: Secrets and Token management.
+- **GraphQL**: Query language for API.
+- **GraphQL**: HTTP client for fetching public repos on Github.
+- **Tailwind CSS**: Utility-first CSS framework for rapid and responsive styling.
+- **ESLint**: Linting tool to maintain code quality and consistency.
+- **Prettier**: Opinionated code formatter to ensure consistent style.
