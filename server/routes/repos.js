@@ -1,8 +1,6 @@
 import { Router } from 'express'
-import dotenv from 'dotenv'
 import { fetchPinnedRepos } from '../services/githubService.js'
 
-dotenv.config()
 const router = Router()
 
 router.get('/', async (req, res) => {
