@@ -14,7 +14,6 @@ Welcome to the repository of my personal portfolio! This project was developed t
 - **Express**: Back-end framework for Node.js.
 - **dotenv**: Secrets and Token management.
 - **GraphQL**: Query language for API.
-- **GraphQL**: HTTP client for fetching public repos on Github.
 - **Tailwind CSS**: Utility-first CSS framework for rapid and responsive styling.
 - **ESLint**: Linting tool to maintain code quality and consistency.
 - **Prettier**: Opinionated code formatter to ensure consistent style.
