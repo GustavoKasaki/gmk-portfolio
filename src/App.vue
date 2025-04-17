@@ -1,6 +1,6 @@
 <script setup>
 import { computed, watch } from 'vue'
-import { useDarkModeStore } from '@/stores/darkMode'
+import { useDarkModeStore } from '@/stores/darkMode.js'
 
 import HeaderComp from '@/components/HeaderComp.vue'
 import Hero from '@/components/Hero.vue'
