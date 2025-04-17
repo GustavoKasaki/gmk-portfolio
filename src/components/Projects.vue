@@ -51,11 +51,11 @@ export default {
       <div v-else-if="repos.length == 0" class="text-center text-slate-500 dark:text-slate-300">
         Failed fetching repositories
       </div>
-      <div v-else class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div v-else class="grid h-auto gap-6 md:grid-cols-2 lg:grid-cols-3">
         <div
           v-for="repo in repos"
           :key="repo.id"
-          class="transform rounded border border-gray-200 bg-white p-4 shadow transition-all duration-500 hover:scale-105 dark:border-gray-600 dark:bg-gray-700"
+          class="flex transform flex-col rounded border border-gray-200 bg-white p-4 shadow transition-all duration-500 hover:scale-105 dark:border-gray-600 dark:bg-gray-700"
         >
           <h4 class="mb-2 text-lg font-semibold">{{ repo.description }}</h4>
           <img
@@ -63,22 +63,38 @@ export default {
             alt="Preview"
             class="mb-3 w-full border-1 border-gray-300 shadow-md"
           />
-          <h5>Technologies used:</h5>
-          <div class="mt-3 flex flex-wrap justify-center gap-4">
-            <i
-              v-for="fw in repo.frameworks"
-              :key="fw.name"
-              :class="fw.icon"
-              class="text-4xl"
-              :title="fw.name"
-            />
-            <i
-              v-for="lang in repo.languages"
-              :key="lang.name"
-              :class="lang.icon"
-              class="text-4xl"
-              :title="lang.name"
-            />
+          <div id="columns" class="mt-auto flex h-auto flex-grow">
+            <div id="1st-column" class="w-2/3 pr-2">
+              <h5>Technologies used:</h5>
+              <div class="mt-3 flex flex-wrap justify-center gap-2">
+                <i
+                  v-for="fw in repo.frameworks"
+                  :key="fw.name"
+                  :class="fw.icon"
+                  class="text-4xl"
+                  :title="fw.name"
+                />
+                <i
+                  v-for="lang in repo.languages"
+                  :key="lang.name"
+                  :class="lang.icon"
+                  class="text-4xl"
+                  :title="lang.name"
+                />
+              </div>
+            </div>
+            <div id="2nd-column" class="flex w-1/3 flex-col items-center justify-center gap-2">
+              <button
+                class="w-full cursor-pointer rounded border border-blue-600 py-2 text-blue-600 transition duration-500 ease-in-out hover:bg-blue-200 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-gray-600 dark:hover:text-blue-100"
+              >
+                <a :href="repo.url"> View on GitHub </a>
+              </button>
+              <button
+                class="w-full cursor-pointer rounded border border-blue-600 py-2 text-blue-600 transition duration-500 ease-in-out hover:bg-blue-200 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-gray-600 dark:hover:text-blue-100"
+              >
+                <a :href="repo.homepageUrl"> View demo </a>
+              </button>
+            </div>
           </div>
         </div>
       </div>
