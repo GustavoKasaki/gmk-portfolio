@@ -9,7 +9,7 @@ export default {
 
     const fetchRepos = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/repos')
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/repos`)
         if (!response.ok) {
           throw new Error(`GitHub API error: ${response.status}`)
         }
