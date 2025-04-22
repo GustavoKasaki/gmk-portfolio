@@ -5,33 +5,38 @@ export default {
 </script>
 
 <template>
-  <div
+  <section
     id="contact"
-    class="bg-gray-100 px-6 py-20 text-center transition-colors duration-500 dark:bg-gray-800"
+    class="flex justify-center bg-gray-100 px-6 py-20 text-center transition-colors duration-500 dark:bg-gray-800"
   >
-    <form class="mx-auto max-w-2xl space-y-4">
-      <h3 class="mb-6 text-2xl font-semibold text-blue-600 dark:text-blue-400">Contact info</h3>
-      <input
-        type="text"
-        placeholder="Name"
-        class="w-full rounded border border-gray-300 bg-white px-4 py-2 text-slate-900 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white"
-      />
-      <input
-        type="email"
-        placeholder="Email"
-        class="w-full rounded border border-gray-300 bg-white px-4 py-2 text-slate-900 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white"
-      />
-      <textarea
-        rows="5"
-        placeholder="Message"
-        class="w-full rounded border border-gray-300 bg-white px-4 py-2 text-slate-900 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white"
-      ></textarea>
-      <button
-        type="submit"
-        class="rounded bg-blue-600 px-6 py-2 text-white transition hover:bg-blue-500"
-      >
-        Send
-      </button>
-    </form>
-  </div>
+    <div class="w-full max-w-7xl">
+      <h3 class="mb-6 text-2xl font-semibold text-blue-600 dark:text-blue-400">Let’s Connect!</h3>
+      <div class="flex justify-center gap-8 text-5xl text-gray-700 dark:text-gray-200">
+        <a
+          href="mailto:gmkasaki@gmail.com"
+          target="_blank"
+          rel="noopener"
+          class="transition-transform hover:scale-130"
+        >
+          <font-awesome-icon :icon="['fas', 'envelope']" />
+        </a>
+        <a
+          href="https://github.com/GustavoKasaki"
+          target="_blank"
+          rel="noopener"
+          class="transition-transform hover:scale-130"
+        >
+          <font-awesome-icon :icon="['fab', 'github']" />
+        </a>
+        <a
+          href="https://linkedin.com/in/GustavoKasaki"
+          target="_blank"
+          rel="noopener"
+          class="transition-transform hover:scale-130"
+        >
+          <font-awesome-icon :icon="['fab', 'linkedin']" />
+        </a>
+      </div>
+    </div>
+  </section>
 </template>
