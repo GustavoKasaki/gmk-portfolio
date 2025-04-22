@@ -10,8 +10,6 @@ Welcome to the repository of my personal portfolio! This project was developed t
 - **Vite**: Fast and modern build tool for front-end projects.
 - **JavaScript**: Main programming language used in the project.
 - **Pinia**: Reactive state management shared between components.
-- **Axios**: Promises-based HTTP client for fetching public repos on Github.
-- **Express**: Back-end framework for Node.js.
 - **dotenv**: Secrets and Token management.
 - **GraphQL**: Query language for API.
 - **Tailwind CSS**: Utility-first CSS framework for rapid and responsive styling.
