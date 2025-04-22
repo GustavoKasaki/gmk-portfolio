@@ -1,8 +1,12 @@
 <script>
 import { ref, onMounted } from 'vue'
+import DotLoader from './DotLoader.vue'
 
 export default {
   name: 'Relevant Projects',
+  components: {
+    DotLoader,
+  },
   setup() {
     const repos = ref([])
     let isLoading = ref(true)
@@ -45,8 +49,8 @@ export default {
       <h3 class="mb-8 text-2xl font-semibold text-blue-600 dark:text-blue-400">
         Relevant Projects
       </h3>
-      <div v-if="isLoading" class="text-center text-slate-500 dark:text-slate-300">
-        Loading projects...
+      <div v-if="isLoading" class="p-20 text-center text-slate-500 dark:text-slate-300">
+        <DotLoader />
       </div>
       <div v-else-if="repos.length == 0" class="text-center text-slate-500 dark:text-slate-300">
         Failed fetching repositories
