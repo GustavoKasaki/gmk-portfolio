@@ -13,12 +13,12 @@ export default {
       <img
         src="@/assets/profile.jpg"
         alt="Profile Picture"
-        class="mb-5 block h-50 rounded-full duration-500 ease-in-out md:mb-10 md:h-70 lg:mr-20 lg:mb-0 dark:hidden"
+        class="mx-auto mb-5 block h-50 rounded-full duration-500 ease-in-out md:mb-10 md:h-70 lg:mx-0 lg:mr-20 lg:mb-0 dark:hidden"
       />
       <img
         src="@/assets/profile-dark.jpg"
         alt="Dark Profile Picture"
-        class="mb-5 hidden h-50 rounded-full duration-500 ease-in-out md:mb-10 md:h-70 lg:mr-20 lg:mb-0 dark:block"
+        class="mx-auto mb-5 hidden h-50 rounded-full duration-500 ease-in-out md:mb-10 md:h-70 lg:mx-0 lg:mr-20 lg:mb-0 dark:block"
       />
       <div class="my-auto text-center">
         <h3 class="mb-6 text-2xl font-semibold text-blue-600 dark:text-blue-400">About Me</h3>
