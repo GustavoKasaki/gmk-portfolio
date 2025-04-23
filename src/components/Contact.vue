@@ -21,6 +21,14 @@ export default {
           <font-awesome-icon :icon="['fas', 'envelope']" />
         </a>
         <a
+          href="https://wa.me/5519997496670"
+          target="_blank"
+          rel="noopener"
+          class="transition-transform duration-500 ease-in-out hover:scale-130 active:scale-85"
+        >
+          <font-awesome-icon :icon="['fab', 'whatsapp']" />
+        </a>
+        <a
           href="https://github.com/GustavoKasaki"
           target="_blank"
           rel="noopener"
