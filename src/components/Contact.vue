@@ -7,7 +7,7 @@ export default {
 <template>
   <section
     id="contact"
-    class="flex justify-center bg-gray-100 px-6 py-20 text-center transition-colors duration-500 dark:bg-gray-800"
+    class="flex scroll-mt-23 justify-center bg-gray-100 px-6 py-20 text-center transition-colors duration-500 dark:bg-gray-800"
   >
     <div class="w-full max-w-7xl">
       <h3 class="mb-6 text-2xl font-semibold text-blue-600 dark:text-blue-400">Let’s Connect!</h3>
@@ -16,7 +16,7 @@ export default {
           href="mailto:gmkasaki@gmail.com"
           target="_blank"
           rel="noopener"
-          class="transition-transform hover:scale-130"
+          class="transition-transform duration-500 ease-in-out hover:scale-130 active:scale-85"
         >
           <font-awesome-icon :icon="['fas', 'envelope']" />
         </a>
@@ -24,7 +24,7 @@ export default {
           href="https://github.com/GustavoKasaki"
           target="_blank"
           rel="noopener"
-          class="transition-transform hover:scale-130"
+          class="transition-transform duration-500 ease-in-out hover:scale-130 active:scale-85"
         >
           <font-awesome-icon :icon="['fab', 'github']" />
         </a>
@@ -32,7 +32,7 @@ export default {
           href="https://linkedin.com/in/GustavoKasaki"
           target="_blank"
           rel="noopener"
-          class="transition-transform hover:scale-130"
+          class="transition-transform duration-500 ease-in-out hover:scale-130 active:scale-85"
         >
           <font-awesome-icon :icon="['fab', 'linkedin']" />
         </a>

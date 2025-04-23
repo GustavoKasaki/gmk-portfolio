@@ -43,7 +43,7 @@ export default {
 <template>
   <section
     id="projects"
-    class="flex justify-center bg-gray-100 px-20 py-20 text-center transition-colors duration-500 dark:bg-gray-800"
+    class="flex scroll-mt-23 justify-center bg-gray-100 px-5 py-10 text-center transition-colors duration-500 md:scroll-mt-0 md:px-6 md:py-20 lg:px-20 dark:bg-gray-800"
   >
     <div class="w-full max-w-7xl">
       <h3 class="mb-8 text-2xl font-semibold text-blue-600 dark:text-blue-400">
@@ -61,7 +61,7 @@ export default {
           :key="repo.id"
           class="flex transform flex-col rounded border border-gray-200 bg-white p-4 shadow transition-all duration-500 hover:scale-105 dark:border-gray-600 dark:bg-gray-700"
         >
-          <h4 class="mb-2 text-lg font-semibold">{{ repo.description }}</h4>
+          <h4 class="text-md mb-2 font-semibold">{{ repo.description }}</h4>
           <img
             :src="repo.previewImage"
             alt="Preview"
@@ -89,12 +89,12 @@ export default {
             </div>
             <div id="2nd-column" class="flex w-1/3 flex-col items-center justify-center gap-2">
               <button
-                class="w-full cursor-pointer rounded border border-blue-600 py-2 text-blue-600 transition duration-500 ease-in-out hover:bg-blue-200 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-gray-600 dark:hover:text-blue-100"
+                class="w-full cursor-pointer rounded border border-blue-600 py-2 text-blue-600 transition-transform duration-500 ease-in-out hover:bg-blue-200 active:scale-85 md:transition dark:border-blue-400 dark:text-blue-400 dark:hover:bg-gray-600 dark:hover:text-blue-100"
               >
                 <a :href="repo.url"> View on GitHub </a>
               </button>
               <button
-                class="w-full cursor-pointer rounded border border-blue-600 py-2 text-blue-600 transition duration-500 ease-in-out hover:bg-blue-200 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-gray-600 dark:hover:text-blue-100"
+                class="w-full cursor-pointer rounded border border-blue-600 py-2 text-blue-600 transition-transform duration-500 ease-in-out hover:bg-blue-200 active:scale-85 md:transition dark:border-blue-400 dark:text-blue-400 dark:hover:bg-gray-600 dark:hover:text-blue-100"
               >
                 <a :href="repo.homepageUrl"> View demo </a>
               </button>

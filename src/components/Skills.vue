@@ -42,17 +42,17 @@ export default {
 <template>
   <section
     id="skills"
-    class="flex justify-center bg-white px-6 py-20 transition-colors duration-500 dark:bg-gray-900"
+    class="flex scroll-mt-23 justify-center bg-white px-5 py-10 transition-colors duration-500 md:px-6 md:py-20 lg:px-20 dark:bg-gray-900"
   >
     <div class="w-full max-w-7xl">
       <h3 class="mb-8 text-center text-2xl font-semibold text-blue-600 dark:text-blue-400">
         Skills
       </h3>
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="flex- flex flex-wrap justify-center gap-8">
         <div
           v-for="(group, index) in skills"
           :key="index"
-          class="rounded border border-gray-200 bg-white p-5 shadow transition-all duration-500 dark:border-gray-600 dark:bg-gray-700"
+          class="w-full rounded border border-gray-200 bg-white px-2 py-5 shadow transition-all duration-500 md:w-[47%] lg:w-[30%] dark:border-gray-600 dark:bg-gray-700"
         >
           <h4 class="mb-4 text-center text-lg font-semibold text-gray-700 dark:text-gray-200">
             {{ group.category }}
